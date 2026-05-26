@@ -11,6 +11,10 @@ module.exports = (sequelize, DataTypes) => {
     statut: {
       type: DataTypes.ENUM('à faire', 'en cours', 'terminée'),
       defaultValue: 'à faire'
+    },
+    location:{
+      type: DataTypes.STRING,
+      allowNull: true
     }
   }, {
     timestamps: true
